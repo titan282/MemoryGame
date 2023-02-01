@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./assets/styles.css">
 <body>
-    <div class="wrapper">
-        <div class="cards">
+    <div class="game">
+        <div class="controls">
+            <button class = "start-button "> Start </button>
+            <div class="stats">
+                <div class="moves">0 move</div>
+                <div class="timer">time: 0 sec</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board" data-dimension = "2">
+                Press start to play
+            </div>
+            <div class="win">You won! <br/>
+                Press start to play again
+            </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="./assets/game.js"></script>
 </body>
 </html>
